@@ -1,4 +1,6 @@
 #include "std.hpp"
+#include "ChatSession.hpp"
+#include "ChatServer.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -24,8 +26,5 @@ int main(int argc, char* argv[])
     LOGV << "호스트 : " << result["host"].as<std::string>();
     LOGV << "포트번호: " << result["port"].as<int>();
 
-    RMHello hello;
-
-    hello.Hello();
     return 0;
 }
